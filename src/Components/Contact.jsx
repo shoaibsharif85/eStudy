@@ -4,7 +4,7 @@ import contact from "../assets/contact.svg";
 
 const Contact = () => {
   return (
-    <div className=" max-w-[1240px] m-auto md:mx-20 md:ml-5  mx-20 ml-[-20px]">
+    <div className=" max-w-[1240px] m-auto md:mx-20 md:ml-5  mx-40 ml-[-20px]">
       <div className=" mx-10 flex flex-col md:flex-row justify-between w-full  text-black ">
         <form className=" w-full md:w-2/5 space-y-5 pt-20">
           <h1 className="text-5xl font-semibold text-center">Contact <span className="text-green-600">Us</span> </h1>

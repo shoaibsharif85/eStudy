@@ -16,8 +16,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function App() {
   return (
-    <div className=' md:max-w-[1240px] m-auto max-w-[300px] m-auto'>
-    <div>
+    <div className=' md:max-w-[1240px]  m-auto max-w-[300px] m-auto'>
+    <div className='my-40'>
         <h1 data-aos="fade-right" className='text-center font-bold text-3xl md:text-4xl'><span className=' text-green-500 '>Our</span> Reviews </h1>
         </div>
       <Swiper data-aos="fade-down"

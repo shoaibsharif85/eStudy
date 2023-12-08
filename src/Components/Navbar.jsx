@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [toggel, setToggel] = useState( );
@@ -19,26 +20,25 @@ const Navbar = () => {
 
                 <ul  className='md:flex hidden text-black font-bold gap-10   ' >
                     <li className='text-[18px]  '>
-                       <a href=""> Home</a>
+                       <NavLink to='/'>Home</NavLink>
                     </li>
-                    <li className='text-[18px]'><a href="">About uS</a></li>
-                    <li className='text-[18px]'><a href="">Course</a></li>
-                    <li className='text-[18px]'><a href="">Reviews</a></li>
+                    <li className='text-[18px]'>  <NavLink to='/About'>About</NavLink></li>
+                    <li className='text-[18px]'>  <NavLink to='Course'>Course</NavLink></li>
+                    <li className='text-[18px]'>  <NavLink to='/Reviews'>Reviews</NavLink></li>
                     
-                    <li className='text-[18px]'><a href="">Contact us</a></li>
+                    <li className='text-[18px]'>  <NavLink to='/Contact'>Contact</NavLink></li>
                 </ul>
                
                 {/* Responsive */}
                 <ul  className={` md:hidden text-white fixed w-full left-0 h-[60vh] px-2  bg-[#000]  top-[80px]  ${ toggel ? "left-[0]" : "left-[-100%]"}`} >
-                <li className='text-[18px] mx-10 py-5'>
-                       <a href=""> Home</a>
+                <li className='text-[18px]  mx-10 my-5'>
+                       <NavLink to='/'>Home</NavLink>
                     </li>
-                    <li className='text-[18px] mx-10 py-5'><a className=''href="">About uS</a></li>
-                  
-                    <li className='text-[18px] mx-10 py-5'><a className=''href="">Course</a></li>
-                
-                    <li className='text-[18px] mx-10 py-5'><a className=''href="">Reviews</a></li>
-                    <li className='text-[18px] mx-10 py-5'><a className='' href="">Contact us</a></li>
+                    <li className='text-[18px] mx-10 my-5'>  <NavLink to='/About'>About</NavLink></li>
+                    <li className='text-[18px]  mx-10 my-5'>  <NavLink to='Course'>Course</NavLink></li>
+                    <li className='text-[18px] mx-10 my-5'>  <NavLink to='/Reviews'>Reviews</NavLink></li>
+                    
+                    <li className='text-[18px] mx-10 my-5'>  <NavLink to='/Contact'>Contact</NavLink></li>
                     
             </ul>
          
